@@ -31,10 +31,9 @@ nuoxian's API黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxvav
 
 ## 捐赠我们
 
-<a href="https://api.nxvav.cn/donate/donate.html" target="_blank">https://api.nxvav.cn/donate/donate.html</a>
+[https://api.nxvav.cn/donate/donate.html](https://api.nxvav.cn/donate/donate.html)
 
 <iframe src="https://api.nxvav.cn/donate/donate.html" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:320px; width:100%;" frameborder="0" scrolling="no"></iframe>
-
 
 ## 捐赠名单
 
