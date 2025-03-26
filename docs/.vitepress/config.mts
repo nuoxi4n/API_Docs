@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/docs/',
   title: "nuoxian's API 使用文档",
   description: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
   lang: 'zh-CN',
@@ -19,7 +20,7 @@ export default defineConfig({
         items: [
           { text: '关于本站', link: '/doc/about-us' },
           { text: '快速开始', link: '/doc/getting-started' },
-          { text: '更新日志', link: '/doc/Changelog' },
+          { text: '更新日志', link: '/doc/changelog' },
           { text: '服务条款', link: 'https://api.nxvav.cn/tos.html' }
         ]
       },
