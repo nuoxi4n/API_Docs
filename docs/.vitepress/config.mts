@@ -8,26 +8,26 @@ export default defineConfig({
   lang: 'zh-CN',
   lastUpdated: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/statics/static/img/favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/doc/about-us' }
+      { text: '文档', link: '/about-us' }
     ],
 
     sidebar: [
       {
         text: '简介',
         items: [
-          { text: '关于本站', link: '/doc/about-us' },
-          { text: '快速开始', link: '/doc/getting-started' },
-          { text: '更新日志', link: '/doc/changelog' },
+          { text: '关于本站', link: '/about-us' },
+          { text: '快速开始', link: '/getting-started' },
+          { text: '更新日志', link: '/changelog' },
           { text: '服务条款', link: 'https://api.nxvav.cn/tos.html' }
         ]
       },
       {
         text: '接口文档',
         items: [
-          { text: '一言', link: '/doc/yiyan' }
+          { text: '一言', link: '/yiyan' }
         ]
       }
     ],
@@ -38,12 +38,30 @@ export default defineConfig({
       text: '在 GitHub 上编辑此页面'
     },
 
+    // 最后更新
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+
     // 模糊搜索
     search: {
       provider: 'local',
       options: {
         translations: {
-          button: { buttonText: "搜索文档" }
+          button: { buttonText: "搜索文档", buttonAriaLabel: '搜索文档' },
+          modal: {
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭'
+            },
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件'
+          }
         }
       },
     },
@@ -64,11 +82,15 @@ export default defineConfig({
       linkText: "返回首页",
     },
 
+    // 社交链接 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nuoxi4n/API_Docs' }
-    ]
+    ],
+
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
   },
   sitemap: {
-    hostname: 'https://api.nxvav.cn'
+    hostname: 'https://api.nxvav.cn/docs/'
   }
 })
