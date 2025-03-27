@@ -5,7 +5,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/',
+  base: '/API_Docs/',
   lang: 'zh-Hans',
   title: "nuoxian's API 使用文档",
   description: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
