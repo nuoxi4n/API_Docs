@@ -14,15 +14,11 @@ https://api.nxvav.cn/api/yiyan/
 
 [https://api.nxvav.cn/api/yiyan/?encode=js&charset=gbk](https://api.nxvav.cn/api/yiyan/?encode=js&charset=gbk)
 
-<!-- tabs:start -->
-
-#### **Shell**
+::: code-group
 
 ```shell
 curl https://api.nxvav.cn/api/yiyan -X POST -d 'charset=utf8'
 ```
-
-#### **HTTP**
 
 ```php
 <?php
@@ -47,7 +43,7 @@ echo $response;
 ?>
 ```
 
-<!-- tabs:end -->
+:::
 
 ## 请求参数
 
@@ -67,11 +63,9 @@ echo $response;
 
 ## 返回示例
 
-<!-- tabs:start -->
+::: code-group
 
-#### **成功(200)**
-
-```json
+```json [成功 200]
 {
     "id": 101177,
     "yiyan": "你总盼着遇贵人，贵人不曾记得你，因为贵人多忘事。",
@@ -80,13 +74,11 @@ echo $response;
 }
 ```
 
-#### **失败(201)**
-
-```json
+```json [失败 201]
 {
     "code": 201,
     "msg": "无法获取 data 内容"
 }
 ```
 
-<!-- tabs:end -->
+:::

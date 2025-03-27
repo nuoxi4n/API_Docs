@@ -14,7 +14,7 @@ hero:
       text: 快速开始
       link: /getting-started
   image:
-      src: /statics/static/img/API.svg
+      src: /statics/static/img/logo_background.svg
       alt: VitePress
 
 features:
