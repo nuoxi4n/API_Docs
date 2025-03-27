@@ -18,13 +18,13 @@ https://api.nxvav.cn/api/yiyan/
 
 #### **Shell**
 
-```shell
+```shell [shell]
 curl https://api.nxvav.cn/api/yiyan -X POST -d 'charset=utf8'
 ```
 
 #### **HTTP**
 
-```php
+```php [php]
 <?php
 
 $curl = curl_init();
@@ -71,7 +71,7 @@ echo $response;
 
 #### **成功(200)**
 
-```json
+```json [json]
 {
     "id": 101177,
     "yiyan": "你总盼着遇贵人，贵人不曾记得你，因为贵人多忘事。",
@@ -82,7 +82,7 @@ echo $response;
 
 #### **失败(201)**
 
-```json
+```json [json]
 {
     "code": 201,
     "msg": "无法获取 data 内容"

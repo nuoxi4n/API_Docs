@@ -1,12 +1,23 @@
 import { defineConfig } from 'vitepress'
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/docs/',
+  lang: 'zh-Hans',
   title: "nuoxian's API 使用文档",
   description: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
-  lang: 'zh-CN',
   lastUpdated: true,
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
+  },
+  vite: {
+    plugins: [
+      groupIconVitePlugin()
+    ],
+  },
   themeConfig: {
     logo: '/statics/static/img/favicon.ico',
     nav: [
@@ -87,6 +98,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/nuoxi4n/API_Docs' }
     ],
 
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
   },
