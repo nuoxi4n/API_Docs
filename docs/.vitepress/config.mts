@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { nav } from './config/nav'
+import { sidebar } from './config/sidebar'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 
 // https://vitepress.dev/reference/site-config
@@ -9,39 +11,20 @@ export default defineConfig({
   description: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
   lastUpdated: true,
   markdown: {
-    config(md) {
-      md.use(groupIconMdPlugin)
+    config ( md ) {
+      md.use ( groupIconMdPlugin )
     },
   },
   vite: {
     plugins: [
-      groupIconVitePlugin()
+      groupIconVitePlugin ()
     ],
   },
   themeConfig: {
     logo: '/statics/static/img/favicon.ico',
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '文档', link: '/about-us' }
-    ],
+    nav: nav,
+    sidebar: sidebar,
 
-    sidebar: [
-      {
-        text: '简介',
-        items: [
-          { text: '关于本站', link: '/about-us' },
-          { text: '快速开始', link: '/getting-started' },
-          { text: '更新日志', link: '/changelog' },
-          { text: '服务条款', link: 'https://api.nxvav.cn/tos.html' }
-        ]
-      },
-      {
-        text: '接口文档',
-        items: [
-          { text: '一言', link: '/yiyan' }
-        ]
-      }
-    ],
 
     // 编辑文章
     editLink: {
