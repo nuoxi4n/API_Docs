@@ -12,7 +12,7 @@ E-mail：[nuo_xian@qq.com](mailto:nuo_xian@qq.com)
 
 首页地址：[https://api.nxvav.cn](https://api.nxvav.cn)
 
-官方文档地址：[https://api.nxvav.cn/doc](https://api.nxvav.cn/doc)
+官方文档地址：[https://api.nxvav.cn/docs/](https://api.nxvav.cn/docs/)
 
 服务状态地址：[https://api.nxvav.cn/menu/status/](https://api.nxvav.cn/menu/status/)
 
