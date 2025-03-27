@@ -1,5 +1,5 @@
 ---
-outline: deep
+outline: doc
 ---
 
 # 关于本站
