@@ -5,7 +5,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/docs/',
+  base: '/',
   lang: 'zh-Hans',
   title: "nuoxian's API 使用文档",
   description: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
@@ -28,7 +28,7 @@ export default defineConfig({
 
     // 编辑文章
     editLink: {
-      pattern: 'https://github.com/nuoxi4n/API_Docs/blob/dev/docs/:path',
+      pattern: 'https://github.com/nuoxi4n/API_Docs/blob/docs/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
 
@@ -87,6 +87,6 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
   },
   sitemap: {
-    hostname: 'https://api.nxvav.cn/docs/'
+    hostname: 'https://docs.nxvav.cn/'
   }
 })
