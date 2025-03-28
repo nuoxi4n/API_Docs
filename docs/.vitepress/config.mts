@@ -28,7 +28,7 @@ export default defineConfig({
 
     // 编辑文章
     editLink: {
-      pattern: 'https://github.com/nuoxi4n/API_Docs/blob/dev/docs/:path',
+      pattern: 'https://github.com/nuoxi4n/API_Docs/blob/docs/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
 
@@ -87,6 +87,6 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
   },
   sitemap: {
-    hostname: 'https://api.nxvav.cn/docs/'
+    hostname: 'https://docs.nxvav.cn/'
   }
 })
