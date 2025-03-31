@@ -1,0 +1,116 @@
+# 垃圾分类查询
+
+> 垃圾分类查询，可以帮助用户识别和分类各种垃圾，包括可回收物、干垃圾、湿垃圾和有害垃圾。
+
+## 接口地址
+
+```
+https://api.nxvav.cn/api/garbages
+```
+
+## 请求示例
+
+[https://api.nxvav.cn/api/garbages/](https://api.nxvav.cn/api/garbages/)
+
+[https://api.nxvav.cn/api/garbages/?name=苹果](https://api.nxvav.cn/api/garbages/?name=苹果)
+
+::: code-group
+
+```shell
+curl https://api.nxvav.cn/api/garbages -X POST -d 'name=苹果'
+```
+
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+   CURLOPT_URL => 'https://api.nxvav.cn/api/garbages/?name=苹果',
+   CURLOPT_RETURNTRANSFER => true,
+   CURLOPT_ENCODING => '',
+   CURLOPT_MAXREDIRS => 10,
+   CURLOPT_TIMEOUT => 0,
+   CURLOPT_FOLLOWLOCATION => true,
+   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+   CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+?>
+```
+
+:::
+
+## 请求参数
+
+| 参数名 | 类型 | 必填 | 说明 |
+| - | - | - | - |
+| name | string | 是 | 输入需要查询的垃圾名 |
+
+## 返回参数
+
+| 返回参数 | 类型 | 说明 |
+| - | - | - |
+| code | string | 状态码 |
+| data | string | 垃圾分类数据 |
+| msg | string | 状态信息 |
+
+## 返回示例
+
+::: code-group
+
+```json [成功 200]
+{
+  "code": 200,
+  "data": [
+    {
+      "name": "烂苹果",
+      "category": "湿垃圾",
+      "content": "易腐垃圾，如：食材废料、剩饭剩菜、过期食品"
+    },
+    {
+      "name": "苹果",
+      "category": "湿垃圾",
+      "content": "易腐垃圾，如：食材废料、剩饭剩菜、过期食品"
+    },
+    {
+      "name": "苹果核",
+      "category": "湿垃圾",
+      "content": "易腐垃圾，如：食材废料、剩饭剩菜、过期食品"
+    },
+    {
+      "name": "苹果派",
+      "category": "湿垃圾",
+      "content": "易腐垃圾，如：食材废料、剩饭剩菜、过期食品"
+    },
+    {
+      "name": "苹果皮",
+      "category": "湿垃圾",
+      "content": "易腐垃圾，如：食材废料、剩饭剩菜、过期食品"
+    },
+    {
+      "name": "苹果耳机",
+      "category": "可回收物",
+      "content": "适宜回收利用和资源化利用的，如：玻、金、塑、纸、衣"
+    },
+    {
+      "name": "苹果肉",
+      "category": "湿垃圾",
+      "content": "易腐垃圾，如：食材废料、剩饭剩菜、过期食品"
+    }
+  ]
+}
+```
+
+```json [失败 400]
+{
+  "code": 400,
+  "msg": "请提供要查询的物品名称"
+}
+```
+
+:::

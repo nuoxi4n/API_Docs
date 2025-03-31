@@ -21,7 +21,7 @@ features:
   - icon: 🚀
     title: 高可用性与低延迟 
     details: 所有接口均部署于全球多节点服务器，支持99.99% SLA可用性保障，响应时间低于200ms，适合实时数据处理场景。
-  - icon: 🧩
+  - icon: 🌏
     title: 全类型接口覆盖
     details: 提供RESTful、GraphQL、WebSocket等多种协议接口，涵盖用户认证、数据查询、文件操作等20+功能模块，满足多样化开发需求。
   - icon: 📝
