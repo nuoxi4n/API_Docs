@@ -27,7 +27,6 @@ export default defineConfig({
     nav: nav,
     sidebar: sidebar,
 
-
     // 编辑文章
     editLink: {
       pattern: 'https://github.com/nuoxi4n/API_Docs/blob/docs/docs/:path',
