@@ -19,11 +19,11 @@ hero:
 
 features:
   - icon: 🚀
-    title: 高可用性与低延迟 
-    details: 所有接口均部署于全球多节点服务器，支持99.99% SLA可用性保障，响应时间低于200ms，适合实时数据处理场景。
+    title: 极速稳定公共服务
+    details: 接口服务通过跨地域分布式节点（覆盖北美、亚太、欧洲等区域）部署，确保99.99%可用性（全年故障≤52分钟），平均响应时间≤200ms。
   - icon: 🌏
-    title: 全类型接口覆盖
-    details: 提供RESTful、GraphQL、WebSocket等多种协议接口，涵盖用户认证、数据查询、文件操作等20+功能模块，满足多样化开发需求。
+    title: 全场景接口协议支持​
+    details: 提供标准化、安全高效的公共API接口服务，全面支持GET、POST等多种网络协议，可灵活适配各类业务场景与开发需求。
   - icon: 📝
     title: 开发者生态支持
     details: 集成SwaggerUI在线调试、Postman预置脚本及7种编程语言SDK，支持一键生成Python/Java/Node.js等调用代码。

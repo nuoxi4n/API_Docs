@@ -12,11 +12,11 @@ E-mail：[nuo_xian@qq.com](mailto:nuo_xian@qq.com)
 
 首页地址：[https://api.nxvav.cn](https://api.nxvav.cn)
 
-官方文档地址：[https://docs.nxvav.cn/](https://docs.nxvav.cn/)
-
-服务状态地址：[https://api.nxvav.cn/menu/status/](https://api.nxvav.cn/menu/status/)
+官方文档地址：[https://docs.nxvav.cn](https://docs.nxvav.cn)
 
 服务条款地址：[https://api.nxvav.cn/tos.html](https://api.nxvav.cn/tos.html)
+
+服务状态地址：[https://api.nxvav.cn/menu/status/](https://api.nxvav.cn/menu/status/)
 
 nuoxian's API黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxvav.cn/apifirewall.html)
 
