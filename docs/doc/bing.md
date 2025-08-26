@@ -50,6 +50,7 @@ echo $response;
 | 参数名 | 类型 | 必填 | 说明 |
 | - | - | - | - |
 | encode | string | 否 | 返回数据格式，可选值`json`，不填默认返回`image/png` |
+| type | string | 否 | 返回数据类型，可选值`auto`，`pc`、`mobile`。不填默认`pc` |
 
 ## 返回响应
 
