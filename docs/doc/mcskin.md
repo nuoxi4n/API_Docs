@@ -56,7 +56,7 @@ echo $response;
 | id/uuid | string | 是 | 正版MC用户名/正版MC玩家的UUID，优先级id > uuid |
 | type | string | 否 | 输出类型，可选值`skin_url`，`skin_cloak` |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |

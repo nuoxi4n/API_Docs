@@ -52,7 +52,7 @@ echo $response;
 | url | string | 是 | 网站域名，不加http(s) |
 | type | string | 否 | 请求网站权重类型，可选值`json`，`baidupc`，`baidum`，`sougou`，`google`，默认`baidupc`，除`json`其他均图片输出 |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |

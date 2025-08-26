@@ -54,7 +54,7 @@ echo $response;
 | - | - | - | - |
 | encode | string | 否 | 返回数据格式，可选值`json`，`js`，`text`，不填默认返回`image/png` |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |

@@ -55,7 +55,7 @@ echo $response;
 | pwd | string | 否 | 蓝奏外链密码 |
 | type | string | 否 | 下载类型，可选值`down` |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |

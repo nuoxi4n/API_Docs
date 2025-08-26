@@ -56,7 +56,7 @@ echo $response;
 | ip | string | 否 | 输入需要查询的IP，不填默认获取当前IP |
 | format | string | 否 | 输出格式，可选值`js`，`json`，`jsonp`，`text`，`xml`，不填默认`json` |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |

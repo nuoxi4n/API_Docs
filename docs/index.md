@@ -15,7 +15,7 @@ hero:
       link: /getting-started
   image:
       src: /statics/static/img/logo_background.svg
-      alt: VitePress
+      alt: www.iconfont.cn/illustrations/detail?cid=49458
 
 features:
   - icon: 🚀

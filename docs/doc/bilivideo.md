@@ -57,7 +57,7 @@ echo $response;
 | format | string | 否 | 视频格式，可选值`flv`，`dash`，`mp4`，默认为`flv` |
 | otype | string | 否 | 输出格式，可选值`json`，`url`，`dplayer`，默认为`json` |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |

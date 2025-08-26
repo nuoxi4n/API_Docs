@@ -52,13 +52,13 @@ echo $response;
 | charset | string | 否 | 返回编码格式，可选值`utf8`，`gbk`不填默认返回`utf8` |
 | encode | string | 否 | 返回数据格式，可选值`json`，`js`，`js1`，`text`不填默认返回`json` |
 
-## 返回参数
+## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| id | string | 仙言id |
+| id | integer | 仙言id |
 | yiyan | string | 仙言内容 |
-| createTime | string | 仙言发布时间 |
+| createTime | integer | 仙言发布时间 |
 | nick | string | 仙言作者 |
 
 ## 返回示例
