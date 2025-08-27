@@ -32,7 +32,8 @@ export const sidebar = [
       { text: 'MC正版皮肤披风获取', link: '/doc/mcskin' },
       { text: 'IP位置查询', link: '/doc/ip' },
       { text: '今日油价查询', link: '/doc/oil' },
-      { text: '垃圾分类查询', link: '/doc/garbages' }
+      { text: '垃圾分类查询', link: '/doc/garbages' },
+      { text: '身份证归属地查询', link: '/doc/idcard' },
     ]
   }
 ]
