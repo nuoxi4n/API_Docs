@@ -1,6 +1,6 @@
 # 📖 开始阅读
 
-- Docusaurus 主题：https://docs.nxvav.cn/
+- VitePress 主题：https://docs.nxvav.cn/
 - [![](https://img.shields.io/badge/QQ%E7%BE%A4-445202136-54B4EF)](https://qm.qq.com/q/IiNfeCBlgk)
 
 # 🔨 构建文档
