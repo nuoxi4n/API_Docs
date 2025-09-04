@@ -56,13 +56,12 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | host | string | 查询域名 |
-| data | string | 查询数据 |
-| data > baidupc | string | 百度pc的权重 |
-| data > baidum | string | 百度m的权重 |
-| data > sougou | string | 搜狗的权重 |
-| data > google | string | 谷歌的权重 |
+| data.baidupc | integer | 百度pc的权重 |
+| data.baidum | integer | 百度m的权重 |
+| data.sougou | integer | 搜狗的权重 |
+| data.google | integer | 谷歌的权重 |
 
 ## 返回示例
 
@@ -78,13 +77,6 @@ echo $response;
         "sougou": "10",
         "google": "10"
     }
-}
-```
-
-```json [失败 201]
-{
-    "code": 201,
-    "msg": "错误"
 }
 ```
 

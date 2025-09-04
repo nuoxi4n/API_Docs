@@ -47,7 +47,7 @@ echo $response;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | - | - | - | - |
-| qq | string | 是 | 需要获取的QQ头像的QQ号码 |
+| qq | integer | 是 | 需要获取的QQ头像的QQ号码 |
 
 ## 返回响应
 

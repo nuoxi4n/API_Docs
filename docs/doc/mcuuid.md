@@ -53,7 +53,7 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | name | string | 玩家昵称 |
 | uuid | string | 玩家UUID |
 
@@ -69,9 +69,9 @@ echo $response;
 }
 ```
 
-```json [失败 201]
+```json [失败 400]
 {
-    "code": 201,
+    "code": 400,
     "msg": "查询失败"
 }
 ```

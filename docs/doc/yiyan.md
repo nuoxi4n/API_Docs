@@ -56,10 +56,10 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| id | integer | 仙言id |
-| yiyan | string | 仙言内容 |
-| createTime | integer | 仙言发布时间 |
-| nick | string | 仙言作者 |
+| id | integer | id |
+| yiyan | string | 内容 |
+| createTime | integer | 发布时间 |
+| nick | string | 作者 |
 
 ## 返回示例
 

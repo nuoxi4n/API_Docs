@@ -56,7 +56,7 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | startdate | string | 壁纸模糊开始日期 |
 | fullstartdate | string | 壁纸具体开始日期 |
 | enddate | string | 壁纸结束日期 |

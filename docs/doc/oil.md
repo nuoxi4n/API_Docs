@@ -53,15 +53,14 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | msg | string | 返回信息 |
-| data | string | 返回数据 |
-| data > province | string | 查询省份 |
-| data > oil_price_update_time | string | 更新数据时间 |
-| data > t0 | string | 0号柴油油价 |
-| data > t92 | string | 92号汽油油价 |
-| data > t95 | string | 95号汽油油价 |
-| data > t98 | string | 98号汽油油价 |
+| data.province | string | 查询省份 |
+| data.oil_price_update_time | string | 更新数据时间 |
+| data.t0 | string | 0号柴油油价 |
+| data.t92 | string | 92号汽油油价 |
+| data.t95 | string | 95号汽油油价 |
+| data.t98 | string | 98号汽油油价 |
 
 ## 返回示例
 
@@ -82,9 +81,9 @@ echo $response;
 }
 ```
 
-```json [失败 -1]
+```json [失败 400]
 {
-    "code": -1,
+    "code": 400,
     "msg": "查询失败"
 }
 ```

@@ -53,11 +53,11 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | author | string | 视频作者 |
 | avatar | string | 作者头像 |
-| like | string | 视频点赞量 |
-| time | string | 视频发布时间 |
+| like | integer | 视频点赞量 |
+| time | integer | 视频发布时间 |
 | title | string | 视频标题 |
 | cover | string | 视频封面 |
 | url | string | 视频链接 |

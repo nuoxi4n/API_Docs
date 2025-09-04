@@ -51,7 +51,7 @@ echo $response;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | - | - | - | - |
-| id | string | 是 | 歌曲id |
+| id | integer | 是 | 歌曲id |
 | server | string | 否 | 数据源，可选值`netease`，`tencent`，不填默认返回`netease` |
 | type | string | 是 | 返回类型，可选值`name`(歌曲名)，`artist`(歌手名)，`url`(音乐直链)，`pic`(歌曲封面)，`lrc`(歌曲歌词)，`single`(歌曲信息)，`playlist`(歌单信息) |
 
@@ -74,13 +74,6 @@ Content-Type: audio/mpeg
 <audio controls="controls" height="100" width="100">
     <source src="https://api.nxvav.cn/api/music/?type=url&id=1436502055" type="audio/mpeg">
 </audio>
-```
-
-```json [失败 201]
-{
-    "code": 201,
-    "msg": "参数错误"
-}
 ```
 
 :::

@@ -55,9 +55,11 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
-| data | string | 垃圾分类数据 |
-| msg | string | 状态信息 |
+| code | integer | 状态码 |
+| data | array | 垃圾分类数据数组 |
+| data.name | string | 垃圾名称 |
+| data.category | string | 垃圾分类 |
+| data.content | string | 垃圾分类内容描述 |
 
 ## 返回示例
 

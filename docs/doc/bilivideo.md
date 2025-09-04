@@ -61,9 +61,9 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
-| quality | string | 视频清晰度 |
-| accept_quality | string | 可获取的视频质量 |
+| code | integer | 状态码 |
+| quality | integer | 视频清晰度 |
+| accept_quality | array | 可获取的视频质量 |
 | url | string | 视频直链 |
 
 ## 返回示例

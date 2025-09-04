@@ -49,13 +49,13 @@ echo $response;
 
 | 参数名 | 类型 | 必填 | 说明 |
 | - | - | - | - |
-| tel | string | 是 | 11位手机号码 |
+| tel | integer | 是 | 11位手机号码 |
 
 ## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | tel | string | 手机号码 |
 | local | string | 归属地 |
 | numberRange | string | 号码段 |
@@ -81,9 +81,16 @@ echo $response;
 }
 ```
 
-```json [失败 201]
+```json [失败 400]
 {
-    "code": 201,
+    "code": 400,
+    "msg": "不是正确的手机号"
+}
+```
+
+```json [无数据 204]
+{
+    "code": 204,
     "msg": "不是正确的手机号"
 }
 ```

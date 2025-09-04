@@ -57,7 +57,7 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | day | string | 今天时间 |
 | content | string | 发生事件 |
 

@@ -59,7 +59,7 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
+| code | integer | 状态码 |
 | msg | string | 状态信息 |
 | name | string | 文件名 |
 | filesize | string | 文件大小 |

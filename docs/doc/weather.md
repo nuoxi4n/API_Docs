@@ -55,15 +55,14 @@ echo $response;
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| code | string | 状态码 |
-| location | string | 城市位置数据 |
-| location > name | string | 城市 |
-| location > country | string | 国家 |
-| location > path | string | 位置 |
-| now | string | 天气信息数据 |
-| now > text | string | 天气现象文字 |
-| now > code | string | 天气现象代码 |
-| now > temperature | string | 温度，单位为c摄氏度 |
+| code | integer | 状态码 |
+| location.name | string | 城市 |
+| location.country | string | 国家 |
+| location.path | string | 位置 |
+| now.text | string | 天气现象文字 |
+| now.code | string | 天气现象代码 |
+| now.temperature | string | 温度，单位为c摄氏度 |
+| last_update | string | 最后更新时间，格式为ISO 8601 |
 
 ## 返回示例
 
