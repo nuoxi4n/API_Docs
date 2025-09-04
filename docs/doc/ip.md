@@ -4,11 +4,11 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/ip/
 ```
 
-IP地址位置数据由 <a href="https://www.cz88.net" target="_blank">纯真CZ88</a> 提供支持
+IP地址位置数据由 [纯真CZ88](https://www.cz88.net) 提供支持
 
 ## 请求示例
 

@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/oil/
 ```
 
@@ -63,7 +63,7 @@ echo $response;
 | data > t95 | string | 95号汽油油价 |
 | data > t98 | string | 98号汽油油价 |
 
-## 请求示例
+## 返回示例
 
 ::: code-group
 

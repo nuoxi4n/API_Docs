@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/lanzou/
 ```
 

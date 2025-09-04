@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/mcskin/
 ```
 
@@ -66,10 +66,10 @@ echo $response;
 | properties | string | 玩家纹理属性 |
 | Yggdrasil | string | 玩家Yggdrasil私钥签名 |
 | skin_ | string | 皮肤数据 |
-| skin_ > skin_timestamp | string | 调用纹理数据的时间 |
-| skin_ > skin_url | string | 玩家自定义皮肤，没有为null |
-| skin_ > skin_cloak | string | 玩家披风，没有或没装备为null |
-| skin_ > skin_model | string | 玩家皮肤模型，null为男，slim为女 |
+| skin_.skin_timestamp | string | 调用纹理数据的时间 |
+| skin_.skin_url | string | 玩家自定义皮肤，没有为null |
+| skin_.skin_cloak | string | 玩家披风，没有或没装备为null |
+| skin_.skin_model | string | 玩家皮肤模型，null为男，slim为女 |
 
 ## 返回示例
 

@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/dongman/
 ```
 
@@ -15,7 +15,6 @@ https://api.nxvav.cn/api/dongman/
 [https://api.nxvav.cn/api/dongman/?encode=json](https://api.nxvav.cn/api/dongman/?encode=json)
 
 [https://api.nxvav.cn/api/dongman/?encode=js](https://api.nxvav.cn/api/dongman/?encode=js)
-
 
 ::: code-group
 

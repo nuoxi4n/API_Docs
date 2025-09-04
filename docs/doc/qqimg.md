@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/qqimg/
 ```
 
@@ -55,7 +55,7 @@ echo $response;
 | - | - | - |
 | image | image/jpg | 返回的QQ头像图片链接地址 |
 
-## 请求示例
+## 返回示例
 
 ::: code-group
 

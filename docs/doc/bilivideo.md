@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```
+```url
 https://api.nxvav.cn/api/bilivideo/
 ```
 
@@ -88,4 +88,5 @@ echo $response;
     "ttl": 1
 }
 ```
+
 :::
