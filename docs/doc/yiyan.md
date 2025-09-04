@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/yiyan/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/yiyan -X POST -d 'charset=utf8'
+curl "https://api.nxvav.cn/api/yiyan/?charset=utf8"
 ```
 
 ```php
@@ -74,10 +74,10 @@ echo $response;
 }
 ```
 
-```json [失败 201]
+```json [失败 400]
 {
-    "code": 201,
-    "msg": "无法获取 data 内容"
+    "code": 400,
+    "msg": "无法请求数据，请稍后再试"
 }
 ```
 
