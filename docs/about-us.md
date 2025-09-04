@@ -16,7 +16,7 @@ E-mail：[nuo_xian@qq.com](mailto:nuo_xian@qq.com)
 
 服务条款地址：[https://api.nxvav.cn/tos.html](https://api.nxvav.cn/tos.html)
 
-服务状态地址：[https://api.nxvav.cn/menu/status/](https://api.nxvav.cn/menu/status/)
+服务状态地址：[https://api.nxvav.cn/pages/status/](https://api.nxvav.cn/pages/status/)
 
 nuoxian's API黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxvav.cn/apifirewall.html)
 
@@ -31,9 +31,9 @@ nuoxian's API黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxvav
 
 ## 捐赠我们
 
-[https://api.nxvav.cn/donate/donate.html](https://api.nxvav.cn/donate/donate.html)
+[https://api.nxvav.cn/pages/donate/](https://api.nxvav.cn/pages/donate/)
 
-<iframe src="https://api.nxvav.cn/donate/donate.html" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:320px; width:100%;" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://api.nxvav.cn/pages/donate/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:320px; width:100%;" frameborder="0" scrolling="no"></iframe>
 
 ## 捐赠名单
 
