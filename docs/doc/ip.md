@@ -21,7 +21,7 @@ IP地址位置数据由 <a href="https://www.cz88.net" target="_blank">纯真CZ8
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/ip -X POST -d 'ip=114.114.114.114'
+curl "https://api.nxvav.cn/api/ip/?ip=114.114.114.114&format=json"
 ```
 
 ```php

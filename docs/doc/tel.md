@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/tel/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/tel -X POST -d 'tel=18888888888'
+curl "https://api.nxvav.cn/api/tel/?tel=18888888888"
 ```
 
 ```php

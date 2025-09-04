@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/bilivideo/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/bilivideo -X POST -d 'av=430366930&p=1&q=32&otype=json'
+curl "https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=json"
 ```
 
 ```php

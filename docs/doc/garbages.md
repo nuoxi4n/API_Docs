@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/garbages
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/garbages -X POST -d 'name=苹果'
+curl "https://api.nxvav.cn/api/garbages/?name=苹果"
 ```
 
 ```php

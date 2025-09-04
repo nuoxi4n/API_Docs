@@ -15,7 +15,7 @@ https://api.nxvav.cn/api/oil/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/oil -X POST -d 'province=上海'
+curl "https://api.nxvav.cn/api/oil/?province=上海"
 ```
 
 ```php

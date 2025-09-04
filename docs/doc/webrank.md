@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/webrank/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/webrank -X POST -d 'url=baidu.com'
+curl "https://api.nxvav.cn/api/webrank/?url=baidu.com"
 ```
 
 ```php

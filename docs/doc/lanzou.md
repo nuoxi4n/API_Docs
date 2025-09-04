@@ -19,7 +19,7 @@ https://api.nxvav.cn/api/lanzou/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/lanzou -X POST -d 'url=https://wwi.lanzoui.com/i1nm7fp8z0d'
+curl "https://api.nxvav.cn/api/lanzou/?url=https://wwi.lanzoui.com/i1nm7fp8z0d"
 ```
 
 ```php

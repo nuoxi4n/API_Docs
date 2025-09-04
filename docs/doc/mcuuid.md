@@ -15,7 +15,7 @@ https://api.nxvav.cn/api/mcuuid/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/mcuuid -X POST -d 'id=nuoxian'
+curl "https://api.nxvav.cn/api/mcuuid/?id=nuoxian"
 ```
 
 ```php

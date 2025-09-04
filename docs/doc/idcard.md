@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/idcard/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/idcard -X POST -d 'id=110105200610319510'
+curl "https://api.nxvav.cn/api/idcard/?id=110105200610319510"
 ```
 
 ```php

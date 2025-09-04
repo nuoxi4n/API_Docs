@@ -20,7 +20,7 @@ https://api.nxvav.cn/api/dongman/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/dongman -X POST -d 'encode=json'
+curl "https://api.nxvav.cn/api/dongman/?encode=json"
 ```
 
 ```php

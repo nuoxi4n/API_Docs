@@ -15,7 +15,7 @@ https://api.nxvav.cn/api/qqimg/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/qqimg -X POST -d 'qq=123456'
+curl "https://api.nxvav.cn/api/qqimg/?qq=123456"
 ```
 
 ```php

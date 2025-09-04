@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/bing/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/bing -X POST -d 'encode=json'
+curl "https://api.nxvav.cn/api/bing"
 ```
 
 ```php

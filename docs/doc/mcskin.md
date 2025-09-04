@@ -21,7 +21,7 @@ https://api.nxvav.cn/api/mcskin/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/mcskin -X POST -d 'id=nuoxian'
+curl "https://api.nxvav.cn/api/mcskin/?id=nuoxian"
 ```
 
 ```php

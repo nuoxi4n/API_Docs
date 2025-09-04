@@ -15,7 +15,7 @@ https://api.nxvav.cn/api/jiexi/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/jiexi -X POST -d 'url=https://v.douyin.com/3DoUicM6y9k/'
+curl "https://api.nxvav.cn/api/jiexi/?url=https://v.douyin.com/3DoUicM6y9k/"
 ```
 
 ```php

@@ -19,7 +19,7 @@ https://api.nxvav.cn/api/music/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/music -X POST -d 'type=playlist&id=5420609323'
+curl "https://api.nxvav.cn/api/music/?type=url&id=1436502055"
 ```
 
 ```php

@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/weather/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/weather -X POST -d 'city=香港'
+curl "https://api.nxvav.cn/api/weather/?city=北京"
 ```
 
 ```php

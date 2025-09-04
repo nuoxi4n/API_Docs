@@ -17,7 +17,7 @@ https://api.nxvav.cn/api/qrcode/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/qrcode -X POST -d 'text=https://api.nxvav.cn/'
+curl "https://api.nxvav.cn/api/qrcode/?text=https://api.nxvav.cn/&size=100" -o qrcode.png
 ```
 
 ```php

@@ -19,7 +19,7 @@ https://api.nxvav.cn/api/lishi/
 ::: code-group
 
 ```shell
-curl https://api.nxvav.cn/api/lishi -X POST -d 'format=json'
+curl "https://api.nxvav.cn/api/lishi"
 ```
 
 ```php
