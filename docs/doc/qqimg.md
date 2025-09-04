@@ -48,25 +48,40 @@ echo $response;
 | 参数名 | 类型 | 必填 | 说明 |
 | - | - | - | - |
 | qq | integer | 是 | 需要获取的QQ头像的QQ号码 |
+| size | integer | 否 | 需要获取的QQ头像的大小，默认为100。可选值：40,100,140,640 |
+| type | string | 否 | 需要获取的QQ头像的类型，默认为json。可选值：download,redirect,json |
 
 ## 返回响应
 
 | 返回参数 | 类型 | 说明 |
 | - | - | - |
-| image | image/jpg | 返回的QQ头像图片链接地址 |
+| code | integer | 状态码 |
+| msg | string | 状态信息 |
+| data.qq | string | 查询QQ号 |
+| data.size | integer | 头像大小 |
+| data.imgurl | string | 头像链接 |
 
 ## 返回示例
 
 ::: code-group
 
-```text [成功 200]
-Content-Type: image/jpg
-
-<img src="https://api.nxvav.cn/api/qqimg/?qq=123456" />
+```json [成功 200]
+{
+  "code": 200,
+  "msg": "成功获取头像信息",
+  "data": {
+    "qq": "123456",
+    "size": 640,
+    "imgurl": "https://q1.qlogo.cn/g?b=qq&nk=123456&s=640"
+  }
+}
 ```
 
-```text [失败 201]
-qq为必须参数！
+```text [失败 400]
+{
+    "code": 400,
+    "msg": "参数不能为空"
+}
 ```
 
 :::

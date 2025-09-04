@@ -57,11 +57,11 @@ echo $response;
 | - | - | - |
 | code | integer | 状态码 |
 | msg | string | 提示信息 |
-| idCardNum | string | 查询的身份证号码 |
-| birthday | string | 出生日期 |
-| sex | string | 性别 |
-| age | integer | 年龄 |
-| address | string | 大致归属地 |
+| data.idCardNum | string | 查询的身份证号码 |
+| data.birthday | string | 出生日期 |
+| data.sex | string | 性别 |
+| data.age | integer | 年龄 |
+| data.address | string | 大致归属地 |
 
 ## 返回示例
 
