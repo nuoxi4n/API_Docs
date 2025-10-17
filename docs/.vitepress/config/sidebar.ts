@@ -32,6 +32,7 @@ export const sidebar = [
       { text: '今日油价查询', link: '/doc/oil' },
       { text: '垃圾分类查询', link: '/doc/garbages' },
       { text: '身份证归属地查询', link: '/doc/idcard' },
+      { text: '每天 60 秒读懂世界', link: '/doc/60s' },
     ]
   }
 ]

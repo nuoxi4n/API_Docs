@@ -42,6 +42,11 @@ nuoxian's API黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxvav
 | weclont | ￥10 | 2021/06/12  | 支付宝 | 感谢贵站提供服务 |
 | weclont | ￥20 | 2024/05/18  | 支付宝 |  |
 
+## 友情链接
+
+- [60s](https://github.com/vikiboss/60s)
+- [LanzouAPI](https://github.com/hanximeng/LanzouAPI)
+
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 

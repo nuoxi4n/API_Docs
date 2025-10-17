@@ -12,8 +12,6 @@ https://api.nxvav.cn/api/lanzou/
 
 [https://api.nxvav.cn/api/lanzou/?url=https://wwi.lanzoui.com/i1nm7fp8z0d](https://api.nxvav.cn/api/lanzou/?url=https://wwi.lanzoui.com/i1nm7fp8z0d)
 
-[https://api.nxvav.cn/api/lanzou/?url=https://wwrk.lanzoub.com/izmj10dko1mb&pwd=bw7h](https://api.nxvav.cn/api/lanzou/?url=https://wwrk.lanzoub.com/izmj10dko1mb&pwd=bw7h)
-
 [https://api.nxvav.cn/api/lanzou/?url=https://wwi.lanzoui.com/i1nm7fp8z0d&type=down](https://api.nxvav.cn/api/lanzou/?url=https://wwi.lanzoui.com/i1nm7fp8z0d&type=down)
 
 ::: code-group
