@@ -33,6 +33,7 @@ export const sidebar = [
       { text: '垃圾分类查询', link: '/doc/garbages' },
       { text: '身份证归属地查询', link: '/doc/idcard' },
       { text: '每天 60 秒读懂世界', link: '/doc/60s' },
+      { text: 'Epic免费喜加一', link: '/doc/epic' },
     ]
   }
 ]
