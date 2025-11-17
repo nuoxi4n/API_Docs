@@ -5,17 +5,17 @@
 ## 接口地址
 
 ```http
-https://api.nxvav.cn/api/oil/
+https://api.nxvav.cn/api/fuel-price/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/oil/?province=上海](https://api.nxvav.cn/api/oil/?province=上海)
+[https://api.nxvav.cn/api/fuel-price/?region=上海](https://api.nxvav.cn/api/fuel-price/?region=上海)
 
 ::: code-group
 
 ```shell
-curl "https://api.nxvav.cn/api/oil/?province=上海"
+curl "https://api.nxvav.cn/api/fuel-price/?region=上海"
 ```
 
 ```php
@@ -24,7 +24,7 @@ curl "https://api.nxvav.cn/api/oil/?province=上海"
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/oil/?province=上海',
+   CURLOPT_URL => 'https://api.nxvav.cn/api/fuel-price/?region=上海',
    CURLOPT_RETURNTRANSFER => true,
    CURLOPT_ENCODING => '',
    CURLOPT_MAXREDIRS => 10,
