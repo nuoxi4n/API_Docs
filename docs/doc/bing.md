@@ -4,7 +4,7 @@
 
 ## 接口地址
 
-```url
+```http
 https://api.nxvav.cn/api/bing/
 ```
 
