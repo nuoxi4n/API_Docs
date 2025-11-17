@@ -7,12 +7,6 @@
       backdrop-filter: blur(10px);
   }
 
-  /* 搜索框透明 */
-  .DocSearch-Button {
-      background-color: rgba(255, 255, 255, 0);
-      backdrop-filter: blur(10px);
-  }
-
   /* Feature透明 */
   .VPFeature {
       border: none;

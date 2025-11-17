@@ -7,20 +7,33 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 export default defineConfig({
   base: '/',
   lang: 'zh-Hans',
-  title: "nuoxian's API 使用文档",
-  description: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
+  title: 'nuoxian\'s API 使用文档',
+  description: 'nuoxian\'s API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。',
   head: [
     ['link', { rel: 'icon', href: '/statics/static/img/favicon.ico' }]
   ],
   lastUpdated: true,
   markdown: {
-    config ( md ) {
-      md.use ( groupIconMdPlugin )
+    config(md) {
+      md.use(groupIconMdPlugin)
     },
   },
   vite: {
     plugins: [
-      groupIconVitePlugin ()
+      groupIconVitePlugin({
+        customIcon: {
+          'shell': 'vscode-icons:file-type-powershell',
+          'javascript': 'vscode-icons:file-type-js',
+          'java': 'vscode-icons:file-type-java',
+          'swift': 'vscode-icons:file-type-swift',
+          'go': 'vscode-icons:file-type-go',
+          'php': 'vscode-icons:file-type-php',
+          'python': '',
+          'c': 'vscode-icons:file-type-c',
+          'c#': 'vscode-icons:file-type-csharp',
+          'ruby': 'vscode-icons:file-type-ruby',
+        }
+      })
     ],
   },
   themeConfig: {
@@ -40,25 +53,6 @@ export default defineConfig({
         dateStyle: 'short',
         timeStyle: 'medium'
       }
-    },
-
-    // 模糊搜索
-    search: {
-      provider: 'local',
-      options: {
-        translations: {
-          button: { buttonText: "搜索文档", buttonAriaLabel: '搜索文档' },
-          modal: {
-            footer: {
-              selectText: '选择',
-              navigateText: '切换',
-              closeText: '关闭'
-            },
-            noResultsText: '无法找到相关结果',
-            resetButtonTitle: '清除查询条件'
-          }
-        }
-      },
     },
 
     // 当前页面
@@ -88,6 +82,6 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
   },
   sitemap: {
-    hostname: 'https://docs.nxvav.cn/'
+    hostname: 'https://docs.nxvav.cn'
   }
 })
