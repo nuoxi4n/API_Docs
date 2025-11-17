@@ -29,7 +29,7 @@ export const sidebar = [
       { text: 'MC正版用户UUID获取', link: '/doc/mcuuid' },
       { text: 'MC正版皮肤披风获取', link: '/doc/mcskin' },
       { text: 'IP位置查询', link: '/doc/ip' },
-      { text: '今日油价查询', link: '/doc/oil' },
+      { text: '油价查询', link: '/doc/fuel-price' },
       { text: '垃圾分类查询', link: '/doc/garbages' },
       { text: '身份证归属地查询', link: '/doc/idcard' },
       { text: '每天 60 秒读懂世界', link: '/doc/60s' },
