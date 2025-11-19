@@ -10,7 +10,7 @@ export default defineConfig({
   title: 'nuoxian\'s API 使用文档',
   description: 'nuoxian\'s API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。',
   head: [
-    ['link', { rel: 'icon', href: '/statics/static/img/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/statics/image/favicon.ico' }]
   ],
   lastUpdated: true,
   markdown: {

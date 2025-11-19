@@ -22,26 +22,26 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ## 请求参数
 
-| 参数名 | 类型 | 必填 | 说明 |
-| - | - | - | - |
-| url | string | 是 | 视频平台分享的链接地址 |
+| 参数名 | 类型   | 必填 | 说明                   |
+| ------ | ------ | ---- | ---------------------- |
+| url    | string | 是   | 视频平台分享的链接地址 |
 
 ## 返回响应
 
-| 字段名 | 类型 | 说明 |
-| - | - | - |
-| code | integer | 状态码 |
-| author | string | 视频作者 |
-| avatar | string | 作者头像 |
-| like | integer | 视频点赞量 |
-| time | integer | 视频发布时间 |
-| title | string | 视频标题 |
-| cover | string | 视频封面 |
-| url | string | 视频链接 |
-| sex | string | 作者性别 |
-| age | string | 作者年龄 |
-| city | string | 所在城市 |
-| uid | string | 作者ID |
+| 字段名 | 类型    | 说明         |
+| ------ | ------- | ------------ |
+| code   | integer | 状态码       |
+| author | string  | 视频作者     |
+| avatar | string  | 作者头像     |
+| like   | integer | 视频点赞量   |
+| time   | integer | 视频发布时间 |
+| title  | string  | 视频标题     |
+| cover  | string  | 视频封面     |
+| url    | string  | 视频链接     |
+| sex    | string  | 作者性别     |
+| age    | string  | 作者年龄     |
+| city   | string  | 所在城市     |
+| uid    | string  | 作者 ID      |
 
 ## 返回示例
 
@@ -70,8 +70,8 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ```json [失败 400]
 {
-    "code": 400,
-    "msg": "解析失败",
+  "code": 400,
+  "msg": "解析失败"
 }
 ```
 

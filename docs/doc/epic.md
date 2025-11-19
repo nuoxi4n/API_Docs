@@ -2,7 +2,7 @@
 api: epic
 ---
 
-# Epic免费喜加一
+# Epic 免费喜加一
 
 > 获取 Epic Games 每周免费游戏列表
 
@@ -22,30 +22,30 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ## 请求参数
 
-| 参数名 | 类型 | 必填 | 说明 |
-| - | - | - | - |
-| encoding | string | 否 | 返回数据的编码格式 |
+| 参数名   | 类型   | 必填 | 说明               |
+| -------- | ------ | ---- | ------------------ |
+| encoding | string | 否   | 返回数据的编码格式 |
 
 ## 返回响应
 
-| 字段名 | 类型 | 说明 |
-| - | - | - |
-| code | integer | 状态码 |
-| message | string | 返回信息 |
-| data | object | 返回数据 |
-| - id | string | ID |
-| - title | string | 游戏名称 |
-| - cover | string | 游戏封面图 |
-| - original_price | integer | 原价（数字，单位为人民币元） |
-| - original_price_desc | string | 已格式化原价描述（带单位） |
-| - description | string | 游戏描述 |
-| - seller | string | 发行厂商/销售商 |
-| - is_free_now | boolean | 当前是否免费 |
-| - free_start | string | 免费开始时间字符串 |
-| - free_start_at | integer | 免费开始时间戳（13 位） |
-| - free_end | string | 免费结束时间字符串 |
-| - free_end_at | integer | 免费结束时间戳（13 位） |
-| - link | string | 游戏详情页 |
+| 字段名                | 类型    | 说明                         |
+| --------------------- | ------- | ---------------------------- |
+| code                  | integer | 状态码                       |
+| message               | string  | 返回信息                     |
+| data                  | object  | 返回数据                     |
+| - id                  | string  | ID                           |
+| - title               | string  | 游戏名称                     |
+| - cover               | string  | 游戏封面图                   |
+| - original_price      | integer | 原价（数字，单位为人民币元） |
+| - original_price_desc | string  | 已格式化原价描述（带单位）   |
+| - description         | string  | 游戏描述                     |
+| - seller              | string  | 发行厂商/销售商              |
+| - is_free_now         | boolean | 当前是否免费                 |
+| - free_start          | string  | 免费开始时间字符串           |
+| - free_start_at       | integer | 免费开始时间戳（13 位）      |
+| - free_end            | string  | 免费结束时间字符串           |
+| - free_end_at         | integer | 免费结束时间戳（13 位）      |
+| - link                | string  | 游戏详情页                   |
 
 ## 返回示例
 
@@ -107,8 +107,8 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ```json [失败 201]
 {
-    "code": 201,
-    "msg": "参数错误"
+  "code": 201,
+  "msg": "参数错误"
 }
 ```
 

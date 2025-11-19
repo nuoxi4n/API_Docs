@@ -2,9 +2,9 @@
 api: qqimg
 ---
 
-# QQ头像获取
+# QQ 头像获取
 
-> 获取QQ用户的头像
+> 获取 QQ 用户的头像
 
 ## 接口地址
 
@@ -22,21 +22,21 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ## 请求参数
 
-| 参数名 | 类型 | 必填 | 说明 |
-| - | - | - | - |
-| qq | integer | 是 | 需要获取的QQ头像的QQ号码 |
-| size | integer | 否 | 需要获取的QQ头像的大小，默认为100。可选值：40,100,140,640 |
-| type | string | 否 | 需要获取的QQ头像的类型，默认为json。可选值：download,redirect,json |
+| 参数名 | 类型    | 必填 | 说明                                                                  |
+| ------ | ------- | ---- | --------------------------------------------------------------------- |
+| qq     | integer | 是   | 需要获取的 QQ 头像的 QQ 号码                                          |
+| size   | integer | 否   | 需要获取的 QQ 头像的大小，默认为 100。可选值：40,100,140,640          |
+| type   | string  | 否   | 需要获取的 QQ 头像的类型，默认为 json。可选值：download,redirect,json |
 
 ## 返回响应
 
-| 字段名 | 类型 | 说明 |
-| - | - | - |
-| code | integer | 状态码 |
-| msg | string | 状态信息 |
-| data.qq | string | 查询QQ号 |
-| data.size | integer | 头像大小 |
-| data.imgurl | string | 头像链接 |
+| 字段名      | 类型    | 说明       |
+| ----------- | ------- | ---------- |
+| code        | integer | 状态码     |
+| msg         | string  | 状态信息   |
+| data.qq     | string  | 查询 QQ 号 |
+| data.size   | integer | 头像大小   |
+| data.imgurl | string  | 头像链接   |
 
 ## 返回示例
 

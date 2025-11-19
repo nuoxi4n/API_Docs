@@ -14,8 +14,8 @@ hero:
       text: 快速开始
       link: /getting-started
   image:
-      src: /statics/static/img/logo_background.svg
-      alt: www.iconfont.cn/illustrations/detail?cid=49458
+    src: /statics/image/logo_background.svg
+    alt: www.iconfont.cn/illustrations/detail?cid=49458
 
 features:
   - icon: 🚀
