@@ -1,47 +1,22 @@
+---
+api: bilivideo
+---
+
 # 哔哩哔哩视频解析
 
 > 支持B站、bilibili全平台视频解析，一键提取高清视频，支持多种清晰度选择。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/bilivideo/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=json](https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=json)
-
-[https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=dplayer](https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=dplayer)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=json"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/bilivideo/?av=430366930&p=1&q=32&otype=json',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -59,7 +34,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | quality | integer | 视频清晰度 |

@@ -1,47 +1,22 @@
+---
+api: tel
+---
+
 # 手机号归属地查询
 
 > 手机号码归属地查询，提供最新的中国移动、中国电信、中国联通所有手机号码归属地
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/tel/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/tel/?tel=18888888888](https://api.nxvav.cn/api/tel/?tel=18888888888)
-
-[https://api.nxvav.cn/api/tel/?tel=15888888888](https://api.nxvav.cn/api/tel/?tel=15888888888)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/tel/?tel=18888888888"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/tel/?tel=18888888888',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -53,7 +28,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | msg | string | 返回信息 |

@@ -1,45 +1,22 @@
+---
+api: jiexi
+---
+
 # 热门视频解析
 
 > 支持解析抖音、皮皮虾、微博等多个主流视频平台的视频。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/jiexi/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/jiexi/?url=https://v.douyin.com/3DoUicM6y9k/](https://api.nxvav.cn/api/jiexi/?url=https://v.douyin.com/3DoUicM6y9k/)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/jiexi/?url=https://v.douyin.com/3DoUicM6y9k/"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/jiexi/?url=https://v.douyin.com/3DoUicM6y9k/',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -51,7 +28,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | author | string | 视频作者 |

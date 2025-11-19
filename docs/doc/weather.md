@@ -1,47 +1,22 @@
+---
+api: weather
+---
+
 # 城市天气预报获取
 
 > 获取指定城市当日天气信息，来源于中国气象局官方数据。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/weather/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/weather/?city=北京](https://api.nxvav.cn/api/weather/?city=北京)
-
-[https://api.nxvav.cn/api/weather/?city=香港](https://api.nxvav.cn/api/weather/?city=香港)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/weather/?city=北京"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/weather/?city=北京',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -53,7 +28,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | location.name | string | 城市 |

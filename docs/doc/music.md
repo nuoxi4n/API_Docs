@@ -1,49 +1,22 @@
+---
+api: music
+---
+
 # 音乐解析
 
 > 可以解析下载QQ音乐、网易云音乐、酷狗、酷我等收费音乐。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/music/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/music/?type=url&id=1436502055](https://api.nxvav.cn/api/music/?type=url&id=1436502055)
-
-[https://api.nxvav.cn/api/music/?type=lrc&id=1495881305](https://api.nxvav.cn/api/music/?type=lrc&id=1495881305)
-
-[https://api.nxvav.cn/api/music/?type=playlist&id=5420609323](https://api.nxvav.cn/api/music/?type=playlist&id=5420609323)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/music/?type=url&id=1436502055"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/music/?type=playlist&id=5420609323',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -57,7 +30,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | name | string | 歌曲名 |
 | artist | string | 歌曲作者 |

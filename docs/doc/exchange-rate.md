@@ -1,47 +1,22 @@
+---
+api: exchange-rate
+---
+
 # 当日货币汇率
 
 > 提供全球主要货币的实时汇率，支持美元、欧元、英镑、日元等常见币种的数据查询，帮您轻松完成外币汇率查询。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/exchange-rate/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/exchange-rate/](https://api.nxvav.cn/api/exchange-rate/)
-
-[https://api.nxvav.cn/api/exchange-rate/?encoding=json](https://api.nxvav.cn/api/exchange-rate/?encoding=json)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/exchange-rate"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/exchange-rate/?encoding=json',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -54,7 +29,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | message | string | 返回信息 |

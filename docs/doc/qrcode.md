@@ -1,53 +1,22 @@
+---
+api: qrcode
+---
+
 # 生成二维码
 
 > 通过文本或url生成二维码，支持自定义尺寸
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/qrcode/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/qrcode/?text=https://api.nxvav.cn/&size=100](https://api.nxvav.cn/api/qrcode/?text=https://api.nxvav.cn/&size=100)
-
-[https://api.nxvav.cn/api/qrcode/?text=你现在访问的是nuoxian的公共API服务哦！](https://api.nxvav.cn/api/qrcode/?text=你现在访问的是nuoxian的公共API服务哦！)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/qrcode/?text=https://api.nxvav.cn/&size=100" -o qrcode.png
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-$url = 'https://api.nxvav.cn/api/qrcode/?text=https://api.nxvav.cn/&size=100';
-$outputFilePath = 'qrcode.png';
-
-curl_setopt_array($curl, array(
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_BINARYTRANSFER => true,
-    CURLOPT_FOLLOWLOCATION => true,
-));
-
-$response = curl_exec($curl);
-
-if ($response === false) {
-    $error = curl_error($curl);
-    echo "cURL Error: $error";
-} else {
-    file_put_contents($outputFilePath, $response);
-    echo "QR Code saved to $outputFilePath";
-}
-
-curl_close($curl);
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -60,7 +29,7 @@ curl_close($curl);
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | image | image/png | 返回的二维码图片，图片格式为PNG |
 

@@ -1,49 +1,22 @@
+---
+api: lishi
+---
+
 # 历史上的今天
 
 > 史上的今天可查询历史上国内外的今天3月26日发生了什么大事要事，从古代到近代、现代、当代的一些人和物、国家、科学、政治、军事、文化、艺术、人文等相关的大小事。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/lishi/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/lishi/](https://api.nxvav.cn/api/lishi/)
-
-[https://api.nxvav.cn/api/lishi/?format=json](https://api.nxvav.cn/api/lishi/?format=json)
-
-[https://api.nxvav.cn/api/lishi/?format=js](https://api.nxvav.cn/api/lishi/?format=js)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/lishi"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/lishi/?format=json',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -55,7 +28,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | day | string | 今天时间 |

@@ -1,51 +1,22 @@
+---
+api: mcskin
+---
+
 # MC正版皮肤披风获取
 
 > 可以获取到正版MC用户名的皮肤详情
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/mcskin/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/mcskin/?id=nuoxian](https://api.nxvav.cn/api/mcskin/?id=nuoxian)
-
-[https://api.nxvav.cn/api/mcskin/?uuid=91cb793afa4a4684973fe7955e679628](https://api.nxvav.cn/api/mcskin/?uuid=91cb793afa4a4684973fe7955e679628)
-
-[https://api.nxvav.cn/api/mcskin/?id=nuoxian&type=skin_url](https://api.nxvav.cn/api/mcskin/?id=nuoxian&type=skin_url)
-
-[https://api.nxvav.cn/api/mcskin/?uuid=5f820c3958834392b1743125ac05e38c&type=skin_cloak](https://api.nxvav.cn/api/mcskin/?uuid=5f820c3958834392b1743125ac05e38c&type=skin_cloak)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/mcskin/?id=nuoxian"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/mcskin/?id=nuoxian',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -58,7 +29,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | string | 状态码 |
 | name | string | 玩家昵称 |

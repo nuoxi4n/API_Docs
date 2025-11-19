@@ -1,51 +1,22 @@
+---
+api: ip
+---
+
 # IP位置查询
 
 > 可以获取本机IP地址，输入IP还可以查询对应的归属地信息，地理位置信息可以精确到运营商和国家、省市级别。
 
 ## 接口地址
 
-```http
-https://api.nxvav.cn/api/ip/
+```http-vue
+https://api.nxvav.cn/api/{{$frontmatter.api}}/
 ```
-
-IP地址位置数据由 [纯真CZ88](https://www.cz88.net) 提供支持
 
 ## 请求示例
 
-[https://api.nxvav.cn/api/ip/](https://api.nxvav.cn/api/ip/)
-
-[https://api.nxvav.cn/api/ip/?ip=114.114.114.114](https://api.nxvav.cn/api/ip/?ip=114.114.114.114)
-
-[https://api.nxvav.cn/api/ip/?ip=114.114.114.114&format=text](https://api.nxvav.cn/api/ip/?ip=114.114.114.114&format=text)
-
 ::: code-group
 
-```shell
-curl "https://api.nxvav.cn/api/ip/?ip=114.114.114.114&format=json"
-```
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-   CURLOPT_URL => 'https://api.nxvav.cn/api/ip/?ip=114.114.114.114&format=json',
-   CURLOPT_RETURNTRANSFER => true,
-   CURLOPT_ENCODING => '',
-   CURLOPT_MAXREDIRS => 10,
-   CURLOPT_TIMEOUT => 0,
-   CURLOPT_FOLLOWLOCATION => true,
-   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-   CURLOPT_CUSTOMREQUEST => 'GET',
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-?>
-```
+<!--@include: ./example/code.md-->
 
 :::
 
@@ -58,7 +29,7 @@ echo $response;
 
 ## 返回响应
 
-| 返回参数 | 类型 | 说明 |
+| 字段名 | 类型 | 说明 |
 | - | - | - |
 | code | integer | 状态码 |
 | data | string | ip数据 |
