@@ -35,6 +35,7 @@ export const sidebar = [
       { text: '每天 60 秒读懂世界', link: '/doc/60s' },
       { text: 'Epic免费喜加一', link: '/doc/epic' },
       { text: '当日货币汇率', link: '/doc/exchange-rate' },
+      { text: '猫眼电影实时票房', link: '/doc/maoyan/movie' },
     ]
   }
 ]

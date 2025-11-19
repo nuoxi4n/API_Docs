@@ -28,7 +28,7 @@ export default defineConfig({
           'swift': 'vscode-icons:file-type-swift',
           'go': 'vscode-icons:file-type-go',
           'php': 'vscode-icons:file-type-php',
-          'python': '',
+          'python': 'vscode-icons:file-type-python',
           'c': 'vscode-icons:file-type-c',
           'c#': 'vscode-icons:file-type-csharp',
           'ruby': 'vscode-icons:file-type-ruby',
