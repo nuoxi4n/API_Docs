@@ -35,10 +35,10 @@ export default defineConfig({
         }
       })
     ],
-  },
+  }, 
   themeConfig: {
     nav: nav,
-    sidebar: sidebar,
+    sidebar: sidebar,  
 
     // 编辑文章
     editLink: {

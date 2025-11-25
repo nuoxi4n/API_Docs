@@ -46,6 +46,7 @@ nuoxian's API 黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxva
 
 - [60s](https://github.com/vikiboss/60s)
 - [LanzouAPI](https://github.com/hanximeng/LanzouAPI)
+- [endroid/qr-code](https://github.com/endroid/qr-code)
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'

@@ -29,6 +29,8 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ## 返回响应
 
+#### 基础数据
+
 | 字段名     | 类型    | 说明     |
 | ---------- | ------- | -------- |
 | id         | integer | id       |
