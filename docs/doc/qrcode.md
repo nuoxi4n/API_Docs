@@ -22,14 +22,14 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ## 请求参数
 
-| 参数名   | 类型    | 必填 | 默认值 | 枚举值             | 说明         |
-| -------- | ------- | ---- | ------ | ------------------ | ------------ |
-| text     | string  | 是   | -      | -                  | URL/文本内容 |
-| size     | integer | 否   | 256px  | -                  | 尺寸         |
-| margin   | integer | 否   | 10px   | -                  | 外边距       |
-| level    | string  | 否   | M      | L,M,Q,H            | 容错         |
-| label    | string  | 否   | -      | -                  | 文本标签     |
-| encoding | string  | 否   | image  | text,json,markdown | 编码方式     |
+| 参数名   | 类型    | 必填 | 默认值 | 枚举值             | 说明                                            |
+| -------- | ------- | ---- | ------ | ------------------ | ----------------------------------------------- |
+| text     | string  | 是   | -      | -                  | URL/文本内容                                    |
+| size     | integer | 否   | 256    | -                  | 尺寸（px）                                      |
+| margin   | integer | 否   | 10     | -                  | 外边距（px），最终图片尺寸 = (size + 2×margin)² |
+| level    | string  | 否   | M      | L,M,Q,H            | 容错                                            |
+| label    | string  | 否   | -      | -                  | 文本标签                                        |
+| encoding | string  | 否   | image  | text,json,markdown | 编码方式                                        |
 
 ## 返回响应
 
