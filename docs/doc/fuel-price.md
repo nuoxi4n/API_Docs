@@ -24,7 +24,7 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 | 参数名   | 类型   | 必填 | 默认值 | 枚举值             | 说明               |
 | -------- | ------ | ---- | ------ | ------------------ | ------------------ |
-| region   | string | 否   | -      | -                  | 待查询地区         |
+| region   | string | 否   | 北京   | -                  | 待查询地区         |
 | encoding | string | 否   | json   | json,text,markdown | 返回数据的编码格式 |
 
 ## 返回响应

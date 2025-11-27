@@ -16,7 +16,7 @@ E-mail：[nuo_xian@qq.com](mailto:nuo_xian@qq.com)
 
 服务条款地址：[https://api.nxvav.cn/tos.html](https://api.nxvav.cn/tos.html)
 
-服务状态地址：[https://api.nxvav.cn/pages/status/](https://api.nxvav.cn/pages/status/)
+服务状态地址：[https://status.nuoxiana.cn](https://status.nuoxiana.cn)
 
 nuoxian's API 黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxvav.cn/apifirewall.html)
 
@@ -31,9 +31,9 @@ nuoxian's API 黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxva
 
 ## 捐赠我们
 
-[https://api.nxvav.cn/pages/donate/](https://api.nxvav.cn/pages/donate/)
+[https://api.nxvav.cn/donate/](https://api.nxvav.cn/donate/)
 
-<iframe src="https://api.nxvav.cn/pages/donate/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:320px; width:100%;" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://api.nxvav.cn/donate/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:320px; width:100%;" frameborder="0" scrolling="no"></iframe>
 
 ## 捐赠名单
 
@@ -47,6 +47,8 @@ nuoxian's API 黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxva
 - [60s](https://github.com/vikiboss/60s)
 - [LanzouAPI](https://github.com/hanximeng/LanzouAPI)
 - [endroid/qr-code](https://github.com/endroid/qr-code)
+- [meting-api](https://github.com/injahow/meting-api)
+- [bilibili-parse](https://github.com/injahow/bilibili-parse)
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
