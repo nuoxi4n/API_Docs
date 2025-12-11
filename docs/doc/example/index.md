@@ -16,7 +16,7 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ::: code-group
 
-<!--@include: code.md-->
+<!--@include: ./example/code.md-->
 
 :::
 

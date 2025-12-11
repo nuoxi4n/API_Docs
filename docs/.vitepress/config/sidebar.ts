@@ -36,6 +36,7 @@ export const sidebar = [
       { text: 'Epic免费喜加一', link: '/doc/epic' },
       { text: '当日货币汇率', link: '/doc/exchange-rate' },
       { text: '猫眼电影实时票房', link: '/doc/maoyan/movie' },
+      { text: '随机运势', link: '/doc/luck' },
     ]
   }
 ]
