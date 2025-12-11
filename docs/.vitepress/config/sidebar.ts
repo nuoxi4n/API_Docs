@@ -37,6 +37,7 @@ export const sidebar = [
       { text: '当日货币汇率', link: '/doc/exchange-rate' },
       { text: '猫眼电影实时票房', link: '/doc/maoyan/movie' },
       { text: '随机运势', link: '/doc/luck' },
+      { text: '密码生成/强度检测器', link: '/doc/password' },
     ]
   }
 ]
