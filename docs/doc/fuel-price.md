@@ -39,13 +39,13 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 #### 数据对象 [data]
 
-| 字段名     | 类型    | 说明               |
-| ---------- | ------- | ------------------ |
-| region     | string  | 地区名称           |
-| items      | array   | 油品列表           |
-| link       | string  | 详情链接           |
-| updated    | string  | 更新时间           |
-| updated_at | integer | 更新时间戳（毫秒） |
+| 字段名     | 类型    | 说明       |
+| ---------- | ------- | ---------- |
+| region     | string  | 地区名称   |
+| items      | array   | 油品列表   |
+| link       | string  | 详情链接   |
+| updated    | string  | 更新时间   |
+| updated_at | integer | 更新时间戳 |
 
 #### 数据数组 [items]
 
