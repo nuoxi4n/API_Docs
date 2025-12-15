@@ -14,7 +14,9 @@ E-mail：[nuo_xian@qq.com](mailto:nuo_xian@qq.com)
 
 官方文档地址：[https://docs.nxvav.cn](https://docs.nxvav.cn)
 
-服务条款地址：[https://api.nxvav.cn/tos.html](https://api.nxvav.cn/tos.html)
+服务条款地址：[https://api.nxvav.cn/terms.html](https://api.nxvav.cn/terms.html)
+
+隐私政策地址：[https://api.nxvav.cn/privacy.html](https://api.nxvav.cn/privacy.html)
 
 服务状态地址：[https://status.nuoxiana.cn](https://status.nuoxiana.cn)
 
