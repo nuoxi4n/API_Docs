@@ -57,7 +57,7 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ```js
 // Token 计算公式
-token = HMAC-SHA1(METING_TOKEN, server + type + id)
+token = HMAC-SHA1(TOKEN, server + type + id)
 ```
 
 示例(使用 Node.js):
