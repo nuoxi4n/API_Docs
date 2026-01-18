@@ -49,7 +49,7 @@ nuoxian's API 黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxva
 - [60s](https://github.com/vikiboss/60s)
 - [LanzouAPI](https://github.com/hanximeng/LanzouAPI)
 - [endroid/qr-code](https://github.com/endroid/qr-code)
-- [meting-api](https://github.com/injahow/meting-api)
+- [Meting-API](https://github.com/metowolf/Meting-API)
 - [bilibili-parse](https://github.com/injahow/bilibili-parse)
 
 <script setup>
