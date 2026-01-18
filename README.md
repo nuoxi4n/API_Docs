@@ -1,23 +1,22 @@
-# 📖 开始阅读
-
-- VitePress 主题：https://docs.nxvav.cn/
-- [![](https://img.shields.io/badge/QQ%E7%BE%A4-445202136-54B4EF)](https://qm.qq.com/q/IiNfeCBlgk)
+<p align="center">
+  <a href="https://docs.nxvav.cn">
+    <img src="https://img.shields.io/badge/%E4%B8%BB%E9%A2%98-VitePress-4169E1" />
+  </a>
+  <a href="https://qm.qq.com/q/IiNfeCBlgk">
+    <img src="https://img.shields.io/badge/QQ%E7%BE%A4-445202136-54B4EF" />
+  </a>
+</p>
 
 # 🔨 构建文档
 
 > [!NOTE]
 > 请先安装 Node.js ^22.0 和 npm ^10.0
 
-1. 将此仓库克隆至本地
-   `git clone https://github.com/nuoxi4n/API_Docs.git`
-2. 移动至仓库根目录
-   `cd API_Docs`
-3. 安装依赖
-   `npm install`
-4. 部署测试
-   `npm run docs:dev`
-4. 构建文档
-   `npm run docs:build`
+1. 将此仓库克隆至本地 `git clone https://github.com/nuoxi4n/API_Docs.git`
+2. 移动至仓库根目录 `cd API_Docs`
+3. 安装依赖 `npm install`
+4. 部署测试 `npm run docs:dev`
+4. 构建文档 `npm run docs:build`
 
 # ⬆️ 提交贡献
 
