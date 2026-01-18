@@ -4,7 +4,7 @@ api: music
 
 # 音乐解析
 
-> 可以解析下载 QQ 音乐、网易云音乐、酷狗、酷我等收费音乐。
+> 可以解析QQ音乐、网易云音乐、酷狗、百度、酷我等音乐
 
 ## 接口地址
 
@@ -22,11 +22,25 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 
 ## 请求参数
 
-| 参数名 | 类型    | 必填 | 说明                                                                                                                                          |
-| ------ | ------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| id     | integer | 是   | 歌曲 id                                                                                                                                       |
-| server | string  | 否   | 数据源，可选值`netease`，`tencent`，不填默认返回`netease`                                                                                     |
-| type   | string  | 是   | 返回类型，可选值`name`(歌曲名)，`artist`(歌手名)，`url`(音乐直链)，`pic`(歌曲封面)，`lrc`(歌曲歌词)，`single`(歌曲信息)，`playlist`(歌单信息) |
+| 参数名 | 类型   | 必填 | 默认值  | 枚举值                                        | 说明                                    |
+| ------ | ------ | ---- | ------- | --------------------------------------------- | --------------------------------------- |
+| server | string | 是   | netease | netease,tencent,kugou,baidu,kuwo              | 音乐平台                                |
+| type   | string | 是   | -       | search,song,album,artist,playlist,lrc,url,pic | 操作类型                                |
+| id     | string | 是   | -       | -                                             | 资源 ID                                 |
+| auth   | string | 否   | -       | -                                             | 认证令牌(仅 `lrc`/`url`/`pic` 类型需要) |
+
+#### 操作类型 [type]
+
+| 字段名   | 类型   | 鉴权 | 说明         |
+| -------- | ------ | ---- | ------------ |
+| search   | string | 否   | 搜索歌曲     |
+| song     | string | 否   | 获取歌曲详情 |
+| album    | string | 否   | 获取专辑     |
+| artist   | string | 否   | 获取歌手     |
+| playlist | string | 否   | 获取歌单     |
+| lrc      | string | 否   | 获取歌词     |
+| url      | string | 否   | 获取播放链接 |
+| pic      | string | 否   | 获取封面图片 |
 
 ## 返回响应
 
@@ -37,16 +51,49 @@ https://api.nxvav.cn/api/{{$frontmatter.api}}/
 | pic    | string | 歌曲封面 |
 | lrc    | string | 歌曲歌词 |
 
+## 鉴权机制
+
+敏感操作(`lrc`、`url`、`pic`)需要提供 HMAC-SHA1 签名的 token:
+
+```js
+// Token 计算公式
+token = HMAC-SHA1(METING_TOKEN, server + type + id)
+```
+
+示例(使用 Node.js):
+
+```js
+const crypto = require('crypto');
+
+function generateToken(server, type, id, secret = 'token') {
+  const message = `${server}${type}${id}`;
+  return crypto.createHmac('sha1', secret).update(message).digest('hex');
+}
+
+const token = generateToken('netease', 'url', '123456');
+```
+
 ## 返回示例
 
 ::: code-group
 
-```text [成功 200]
-Content-Type: audio/mpeg
+```json [成功 200]
+[
+  {
+    "title": "歌曲名称",
+    "author": "艺术家1 / 艺术家2",
+    "url": "https://your-domain.com/api?server=netease&type=url&id=xxx&auth=xxx",
+    "pic": "https://your-domain.com/api?server=netease&type=pic&id=xxx&auth=xxx",
+    "lrc": "https://your-domain.com/api?server=netease&type=lrc&id=xxx&auth=xxx"
+  }
+]
+```
 
-<audio controls="controls" height="100" width="100">
-    <source src="https://api.nxvav.cn/api/music/?type=url&id=1436502055" type="audio/mpeg">
-</audio>
+```json [失败 400]
+{
+  "code": 400,
+  "message": "参数 text 不能为空"
+}
 ```
 
 :::
