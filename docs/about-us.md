@@ -51,6 +51,7 @@ nuoxian's API 黑名单列表：[https://nxvav.cn/apifirewall.html](https://nxva
 - [endroid/qr-code](https://github.com/endroid/qr-code)
 - [Meting-API](https://github.com/metowolf/Meting-API)
 - [bilibili-parse](https://github.com/injahow/bilibili-parse)
+- [garbage-recycle](https://github.com/lsongdev/garbage-recycle)
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
